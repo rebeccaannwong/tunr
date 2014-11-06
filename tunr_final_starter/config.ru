@@ -19,6 +19,5 @@ ActiveRecord::Base.establish_connection
 (ENV['tunr_db'] || 'postgres://localhost/mydb')
 after { ActiveRecord::Base.connection.close 
 
-after { ActiveRecord::Base.connection.close }
 
 run Sinatra::Application
